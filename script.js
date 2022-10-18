@@ -1,4 +1,4 @@
-function generateNumber(max, min){
+function generateNumber(max, min) {
   let generateNumber = Math.floor(Math.random() * max) + min;
   return generateNumber;
 }
@@ -6,7 +6,7 @@ function generateNumber(max, min){
 var btn = document.getElementById("btn")
 
 btn.addEventListener("click", () => {
-let theUser = prompt("Please enter your username");
+  let theUser = prompt("Please enter your username");
   if (theUser != null) {
 
     let guessNumber = parseInt(prompt("Predict generated number"))
@@ -19,11 +19,11 @@ let theUser = prompt("Please enter your username");
     }
 
   }
-let guessNumber2 = parseInt(prompt("Welcome to stage 2, predict the generated number"))
-  while (guessNumber2 !== generateNumber(3, 1)) {
+  let guessNumber2 = parseInt(prompt("Welcome to stage 2, predict the generated number"))
+  while (guessNumber2 != generateNumber(3, 1)) {
     guessNumber2 = parseInt(prompt("Failed! Predict generated number again"))
   }
-  if (guessNumber2 == generateNumber(3, 1)) {
+  if (guessNumber2 = generateNumber(3, 1)) {
     alert("Congratulations! you have been awarded another point, totalling 2 point")
 
   }
